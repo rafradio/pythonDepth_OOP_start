@@ -4,6 +4,10 @@ def main():
     fibo = Fibo()
     acc = fibo.generator()
     it: int = 1
+    # x = (f for f in acc)
+    # print(next(x))
+    # print(next(x))
+    it: int = 1
     for f in acc:
         print(f'fibo {it} = {f} {fibo.count}')
         acc.send(it:= it + 1)
